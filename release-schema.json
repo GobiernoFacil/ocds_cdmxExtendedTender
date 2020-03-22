@@ -1,0 +1,134 @@
+{
+  "definitions" : {
+    "Tender" : {
+      "properties" : {
+
+        "maxValue" : {
+          "title" : "Maximum Value",
+          "description" : "Maximum amount established in the Expenditure Budget of Mexico City corresponding to the respective fiscal year",
+          "$ref" : "#/definitions/Value"
+        },
+
+        "procurementID" : {
+          "title" : "procurement ID",
+          "description" : "Control number assigned internally to the purchase procedure. This information must be in the requisition form.",
+          "type" : ["string", "null"]
+        },
+
+        "requiredAuthorizationType" : {
+          "title" : "Required Authorization Type",
+          "description" : "the type of the authorization required or null if no authorization is required",
+          "type" : ["string", "null"]
+        },
+
+        "advancePayment" : {
+          "title" : "Advance Payment",
+          "description" : "The purchase procedure includes an advance.",
+          "type" : ["boolean", "null"]
+        },
+
+        "advancePaymentPercent" : {
+          "title" : "Advance Payment Percent",
+          "description" : "The percentage of advance that the purchase procedure considers",
+          "type" : ["number", "null"]
+        },
+
+        "tenderNature" : {
+          "title" : "Tender Nature",
+          "description" : "This field is only for public bidding and can take three different values: National, International Open and International by treaties. The nature of a call defines the possible contestants",
+          "type" : ["string", "null"]
+        },
+
+        "article54FractionException" : {
+          "title" : "Article 54 Fraction Exception",
+          "description" : "Fraction of article 54 of the Procurement Law for Mexico City that justifies the exception to the tender",
+          "type" : ["string", "null"]
+        },
+
+        "fiscalYearResources" : {
+          "title" : "fiscalYearResources",
+          "description" : "Fiscal year to which the resources to be exected belong",
+          "type" : ["string", "null"]
+        },
+
+        "desertedBiddingID" : {
+          "title" : "Deserted Bidding ID",
+          "description" : "An exception is made to the tender for the cases provided for in Section IV article 54 of the Procurement Law for Mexico City"
+          ,
+          "type" : ["string", "null"]
+        },
+
+        "desertedBiddingChiefAuthorizationDate" : {
+          "title" : "Deserted Bidding Chief Authorization Date",
+          "description" : "Date on which the head of the Unit,issues the authorization to the exception of the tender.",
+          "type": ["string", "null"],
+          "format": "date-time"
+        },
+
+        "desertedBiddingCommitteeAuthorizationDate" : {
+          "title" : "Deserted Bidding Committee Authorization Date",
+          "description" : "Date on which the Procurement Committee or Subcommittee of the Unit, issues the authorization to the exception of the tender.",
+          "type": ["string", "null"],
+          "format": "date-time"
+        },
+
+        "invitationDate" : {
+          "title" : "Invitation Date",
+          "description" : "date on which the invitation to participate in the purchase procedure is extended to individuals or companies.",
+          "type": ["string", "null"],
+          "format": "date-time"
+        },
+
+        "requisitionNumber" : {
+          "title" : "Requisition Number", 
+          "description" : "Number or requisition page assigned internally in the Dependencies, Decentralized Bodies, Delegations or Entities.",
+          "type": ["string", "null"]
+        },
+
+        "requisitionDate" : {
+          "title" : "Requisition Date",
+          "description" : "Date on which the requesting area makes the purchase request",
+          "type": ["string", "null"],
+          "format": "date-time"
+        },
+
+        "budgetAuthorizationDate" : {
+          "title" : "Budget Authorization Date",
+          "description" : "Budget Sufficiency Date",
+          "type": ["string", "null"],
+          "format": "date-time"
+        },
+
+        "biddingAmendmentsAfterClarifications" : {
+          "title" : "Bidding Amendments After Clarifications",
+          "description" : "Were the rules of the bidding modified after the clarification meeting?",
+          "type" : ["boolean", "null"]
+        },
+
+        "desertedBidding" : {
+          "title" : "Deserted Bidding",
+          "description" : "inform if the bidding was declared deserted",
+          "type": ["boolean", "null"]
+        },
+
+        "desertedBiddingCauses" : {
+          "title" : "Deserted Bidding Causes", 
+          "description" : "Grounds for which the contest was declared deserted",
+          "type": ["string", "null"]
+        },
+
+        "disqualifiedTenderers" : {
+          "title" : "disqualifiedTenderers",
+          "description" : "Number of suppliers disqualified for failing to meet any requirement",
+          "type": ["integer", "null"]
+        },
+
+        "hasAuction" : {
+          "title" : "Has Auction",
+          "description" : "describes if an auction was held",
+          "type" : ["boolean", "null"]
+        }
+      }
+    }
+  }
+}

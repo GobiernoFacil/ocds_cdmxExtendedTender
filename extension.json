@@ -1,0 +1,17 @@
+{
+  "name": {
+    "en": "CDMX Extended Tender"
+  },
+  "description": {
+    "en": "add value information related to the Mexico City Contracting Process (Tender)"
+  },
+  "compatibility": [
+    "1.1"
+  ],
+  "documentationUrl": {
+    "en": "https://github.com/GobiernoFacil/ocds_cdmxExtendedTender_extension"
+  },
+  "schemas": [
+    "release-schema.json"
+  ]
+}
