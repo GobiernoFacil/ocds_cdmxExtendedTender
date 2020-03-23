@@ -18,7 +18,7 @@
         "requiredAuthorizationType" : {
           "title" : "Required Authorization Type",
           "description" : "the type of the authorization required or null if no authorization is required",
-          "type" : ["string", "null"]
+          "type" : ["array", "null"]
         },
 
         "advancePayment" : {
