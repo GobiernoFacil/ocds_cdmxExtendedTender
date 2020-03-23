@@ -42,7 +42,7 @@
         "article54FractionException" : {
           "title" : "Article 54 Fraction Exception",
           "description" : "Fraction of article 54 of the Procurement Law for Mexico City that justifies the exception to the tender",
-          "type" : ["string", "null"]
+          "type" : ["array", "null"]
         },
 
         "fiscalYearResources" : {
